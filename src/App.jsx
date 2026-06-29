@@ -494,7 +494,6 @@ export default function App() {
             )}
           </div>
         </div>
-      </div>
 
       {/* ===== ADD REVIEW ===== */}
       {view === 'add' && (
