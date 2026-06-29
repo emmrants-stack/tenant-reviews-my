@@ -179,6 +179,15 @@ export default function App() {
     }
   }, [properties]);
 
+  // Trigger map resize when returning to home — fixes blank map bug
+  useEffect(() => {
+    if (view === 'home' && mapRef.current && window.google?.maps) {
+      setTimeout(() => {
+        window.google.maps.event.trigger(mapRef.current, 'resize');
+      }, 50);
+    }
+  }, [view]);
+
   useEffect(() => { fetchData(); initMap(); }, []);
   useEffect(() => { if (mapRef.current) updateMarkers(); }, [properties, reviews]);
 
@@ -397,9 +406,8 @@ export default function App() {
   return (
     <div style={{ maxWidth:500, margin:'0 auto', minHeight:'100vh', fontFamily:'-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif', background:'#f5f5f5' }}>
 
-      {/* ===== HOME ===== */}
-      {view === 'home' && (
-        <div style={{ minHeight:'100vh', display:'flex', flexDirection:'column' }}>
+      {/* ===== HOME — always mounted so map stays in DOM ===== */}
+      <div style={{ display: view === 'home' ? 'flex' : 'none', flexDirection:'column', minHeight:'100vh' }}>
           <div style={{ padding:'20px 20px 14px', background:'white', borderBottom:'1px solid #f0f0f0' }}>
             <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:10 }}>
               <div style={{ display:'flex', alignItems:'center', gap:8 }}>
@@ -486,7 +494,7 @@ export default function App() {
             )}
           </div>
         </div>
-      )}
+      </div>
 
       {/* ===== ADD REVIEW ===== */}
       {view === 'add' && (
