@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35"/>
+      <stop offset="100%" style="stop-color:#e85520"/>
+    </linearGradient>
+    <linearGradient id="overlay" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#000;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#overlay)"/>
+
+  <!-- Subtle grid pattern -->
+  <rect width="1200" height="630" fill="none" stroke="white" stroke-width="0.5" opacity="0.05"/>
+
+  <!-- Left accent bar -->
+  <rect x="80" y="160" width="6" height="240" fill="white" opacity="0.4" rx="3"/>
+
+  <!-- Main headline -->
+  <text x="112" y="255" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="92" fill="white" letter-spacing="-2">Know before</text>
+  <text x="112" y="365" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="92" fill="white" letter-spacing="-2">you sign.</text>
+
+  <!-- Subtext -->
+  <text x="112" y="440" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="rgba(255,255,255,0.8)">Real tenant experiences in Malaysia</text>
+  <text x="112" y="490" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="rgba(255,255,255,0.6)">Landlords · Agents · Management · Nothing hidden</text>
+
+  <!-- Domain -->
+  <text x="112" y="580" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="rgba(255,255,255,0.45)">tenant-reviews-my.vercel.app</text>
+
+  <!-- House icon top right -->
+  <g transform="translate(980, 120) scale(3.5)" opacity="0.15">
+    <polygon points="20,3 37,14 3,14" fill="white"/>
+    <rect x="5" y="14" width="30" height="20" fill="white"/>
+    <rect x="14" y="22" width="12" height="12" fill="#ff6b35"/>
+  </g>
+</svg>

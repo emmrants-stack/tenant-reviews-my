@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -141,3 +142,11 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+=======
+node_modules/
+dist/
+.env.local
+.DS_Store
+npm-debug.log
+yarn-error.log
+>>>>>>> 2bccb2b (Initial commit: tenant reviews app with star ratings and map)

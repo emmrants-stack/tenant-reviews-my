@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tab title -->
+    <title>Tenant Reviews MY – Know Before You Sign</title>
+
+    <!-- Primary meta -->
+    <meta name="title" content="Tenant Reviews MY – Know Before You Sign" />
+    <meta name="description" content="Real tenant experiences in Malaysia. Search properties, landlords and agents before you sign. Honest reviews on management, security, value and more. Nothing hidden." />
+    <meta name="theme-color" content="#ff6b35" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Tenant Reviews MY" />
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tenant-reviews-my.vercel.app/" />
+    <meta property="og:title" content="Tenant Reviews MY – Know Before You Sign" />
+    <meta property="og:description" content="Real tenant experiences in Malaysia. Landlords, agents, management. The truth that listings don't show." />
+    <meta property="og:image" content="https://tenant-reviews-my.vercel.app/og-image.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Tenant Reviews MY" />
+    <meta property="og:locale" content="en_MY" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://tenant-reviews-my.vercel.app/" />
+    <meta name="twitter:title" content="Tenant Reviews MY – Know Before You Sign" />
+    <meta name="twitter:description" content="Real tenant experiences in Malaysia. Landlords, agents, management. The truth that listings don't show." />
+    <meta name="twitter:image" content="https://tenant-reviews-my.vercel.app/og-image.svg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <!-- Google Maps: load once here, not in React -->
+    <script>
+      window._googleMapsReady = false;
+      function onGoogleMapsReady() {
+        window._googleMapsReady = true;
+        window.dispatchEvent(new CustomEvent('gmaps-ready'));
+      }
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjCOVp2i3Pji0_-cTsOu4ZkdM5g-aYaW4&callback=onGoogleMapsReady">
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
